@@ -1,0 +1,3 @@
+# Multiple Mutable References in Rust
+
+This repository demonstrates a common error in Rust: attempting to create multiple mutable references to the same data at the same time.  The code attempts to create two mutable references (`y` and `z`) to the variable `x`, which is not allowed by Rust's borrow checker because it would lead to data races and unpredictable behavior. The solution shows how to avoid this error by restructuring the code to only use one mutable reference at a time.
